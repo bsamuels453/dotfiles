@@ -16,8 +16,11 @@ imap <ESC>oB <ESC>ji
 imap <ESC>oC <ESC>li
 imap <ESC>oD <ESC>hi
 
+
+
 " fix 1 second screen delay on switching out of insert to command mode
 imap ` <C-c>`^
+
 
 " forces the cursor's color to change when the mode changes to insert
 " normally, the mode would change to insert and the cursor color would not change until you started typing
