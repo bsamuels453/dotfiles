@@ -1,0 +1,7 @@
+*
+!.gitignore
+!.vim
+!.vim/*
+!.vimrc
+!.config
+!.config/*
