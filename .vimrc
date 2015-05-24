@@ -16,11 +16,8 @@ imap <ESC>oB <ESC>ji
 imap <ESC>oC <ESC>li
 imap <ESC>oD <ESC>hi
 
-
-
 " fix 1 second screen delay on switching out of insert to command mode
 imap ` <C-c>`^
-
 
 " forces the cursor's color to change when the mode changes to insert
 " normally, the mode would change to insert and the cursor color would not change until you started typing
@@ -52,6 +49,9 @@ set ignorecase				" case insensitive search
 set smartindent				" sane auto indenting
 set shiftwidth=4			" set up indent width
 set tabstop=4				"
+set shiftwidth=4
+set softtabstop=4
+set expandtab
 set wildmenu				" show list instead of just completing
 set wildmode=list:longest,full		" command <Tab> completion, list matches, then longest common part, then all.
 set whichwrap=b,s,h,l,<,>,[,]		" backspace and cursor keys wrap to
@@ -144,4 +144,3 @@ autocmd FileType python compiler pylint
 " switch line numbering depending on current mode
 autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
-
